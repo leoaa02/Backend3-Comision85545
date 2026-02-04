@@ -1,13 +1,21 @@
-## Entrega N°1 – Backend III (Coderhouse)
+# Backend Test Project – Dockerized
 
-En este proyecto se implementa un servidor backend utilizando **Node.js** y **Express**, incorporando un router específico para mocking de datos bajo la ruta base `/api/mocks`.
+Proyecto backend desarrollado para la entrega final del curso  
+**Backend III – Coderhouse**.
 
-Se desarrollaron endpoints para la generación de datos simulados de usuarios y mascotas utilizando **Faker**, incluyendo la encriptación de contraseñas con **bcrypt** y la asignación dinámica de roles.  
-Además, se implementó un endpoint que permite generar e insertar registros en **MongoDB** a partir de parámetros numéricos enviados por request.
+---
 
-### Endpoints principales
-- `GET /api/mocks/mockingpets`
-- `GET /api/mocks/mockingusers`
-- `POST /api/mocks/generateData`
+## 📦 Imagen Docker
 
-El proyecto permite validar la correcta inserción de los datos generados mediante la base de datos y cumple con los requisitos establecidos para la primera entrega del curso Backend III.
+La imagen del proyecto se encuentra disponible públicamente en Docker Hub:
+
+👉 https://hub.docker.com/r/leoaa02/backend-testproject
+
+---
+
+## 🏗️ Construir la imagen Docker localmente (opcional)
+
+En caso de querer construir la imagen de manera local, ejecutar:
+
+```bash
+docker build -t backend-testproject .
